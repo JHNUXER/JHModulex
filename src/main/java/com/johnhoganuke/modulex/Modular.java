@@ -19,6 +19,6 @@ public interface Modular<M extends Module> {
    * 
    * @param m the module to add to this modular object.
    */
-  public default void addModule(M m) { m.addTo(this); }
+  public default void removeModule(M m) { m.removeFrom(this); }
   
 }
